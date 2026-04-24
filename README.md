@@ -66,28 +66,26 @@ The goal is to centralize sales data for better insights into customers, employe
 
  📂 Repo Structure
 
+bohlale_repo/
+├── ...
 
-PC-Sales-DW/
-├── README.md
 
-├── /sql/
+├── staging_dim_tables/
 
-│   ├── 01_create_db_and_schema.sql
+│   └── [dimension table files]
 
-│   ├── 02_create_dimensions.sql
+├── stored_procedures/      
 
-│   ├── 03_create_fact.sql
 
-│   ├── 04_load_data.sql
+│   ├── sp_load_dimensions.sql 
 
-│   └── 05_create_indexes.sql
 
-├── /queries/
+│   └── individual_dim_sp/  
 
-└── /docs/
 
-└── schema.png
+└── staging/
 
+ └── pc_sales_fact.sql
 
  🚀 How To Run
 
