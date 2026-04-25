@@ -106,24 +106,3 @@ BEGIN
 END;
 GO
 
---execute_all_procedures
-
-CREATE PROCEDURE execute_all_procedures
-AS
-BEGIN
-    SET NOCOUNT ON;
-    
-    EXEC dim_location_sp;
-    EXEC dim_date_sp;
-    EXEC dim_employee_sp;
-    EXEC dim_product_sp;
-    EXEC dim_store_sp;
-    EXEC dim_channel_sp;
-    EXEC dim_customer_sp;
-    EXEC dim_priority_sp;
-    EXEC dim_payment_method;
-    
-    PRINT 'All dimensions loaded successfully.';
-END;
-GO
-
